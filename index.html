@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apa yang Kamu Suka tentang Bali?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apa yang Kamu Suka tentang Bali?</h1>
+    </header>
+
+    <section id="form-section">
+        <h2>Bagikan Pemikiranmu</h2>
+        <form action="submit_info.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Apa yang Kamu Suka tentang Bali?</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <section id="display-section">
+        <h2>Apa yang Orang Lain Suka tentang Bali</h2>
+        <?php include 'display_info.php'; ?>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Apa yang Kamu Suka tentang Bali?</p>
+    </footer>
+</body>
+</html>
